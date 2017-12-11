@@ -1,0 +1,21 @@
+{
+  "name": "time",
+  "type": "flogo:activity",
+  "ref": "github.com/lhollyer/hx711",
+  "version": "0.0.1",
+  "title": "Get time",
+  "description": "Get time",
+  "homepage": "https://github.com/lhollyer/time",
+  "inputs":[
+    {
+      "name": "input",
+      "type": "string"
+    }
+  ],
+  "outputs": [
+    {
+      "name": "result",
+      "type": "string"
+    }
+  ]
+}

@@ -3,6 +3,7 @@ package time
 import (
 	"github.com/TIBCOSoftware/flogo-lib/core/activity"
 	"time"
+	"fmt"
 )
 
 // MyActivity is a stub for your Activity implementation

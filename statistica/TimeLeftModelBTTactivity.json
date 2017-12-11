@@ -5,7 +5,7 @@
 	"version": "0.0.1",
 	"title": "Name of model",
 	"description": "My_Model Activity generated from Statistica",
-	"homepage": "http://....",
+	"homepage": "http://https://github.com/lhollyer/flogo-activities/statistica",
 	"inputs":[
 		{
 			"name": "_CURRENT_WEIGHT__",

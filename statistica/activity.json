@@ -1,0 +1,27 @@
+{
+	"name": "statistica",
+	"type": "flogo:activity",
+	"ref": "github.com/lhollyer/activities/statistica",
+	"version": "0.0.1",
+	"title": "Statistica Model",
+	"description": "Model Activity generated from Statistica",
+	"homepage": "http://....",
+	"inputs":[
+		{
+			"name": "_TEMPERATURE__",
+			"type": "number",
+			"required": true
+		},
+		{
+			"name": "_EVENT__",
+			"type": "string",
+			"required": true
+		}
+	],
+	"outputs": [
+		{
+			"name": "result",
+			"type": "any"
+		}
+	]
+}

@@ -1,4 +1,4 @@
-package ds18b20
+package statistica
 
 import (
 	"io/ioutil"

@@ -1,7 +1,7 @@
 {
   "name": "time",
   "type": "flogo:activity",
-  "ref": "github.com/lhollyer/hx711",
+  "ref": "github.com/lhollyer/stats/time",
   "version": "0.0.1",
   "title": "Get time",
   "description": "Get time",

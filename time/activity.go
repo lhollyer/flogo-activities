@@ -34,7 +34,7 @@ func (a *MyActivity) Eval(context activity.Context) (done bool, err error)  {
 	}
 	
 	if err == nil {
-		context.SetOutput("result", t.Hour())
+		context.SetOutput("result", strconv.Itoa(t.Hour()))
 	}
 	return true, nil
 }

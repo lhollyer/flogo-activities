@@ -4,6 +4,7 @@ import (
 	"github.com/TIBCOSoftware/flogo-lib/core/activity"
 	"time"
 	"fmt"
+	"strconv"
 )
 
 // MyActivity is a stub for your Activity implementation

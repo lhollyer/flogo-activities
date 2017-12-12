@@ -29,13 +29,6 @@ func (a *MyActivity) Eval(context activity.Context) (done bool, err error)  {
 	
 	t := time.Now()
 	fmt.Println(t.Hour())
-	
-	if err != nil {
-		panic(err)
-	}
-	
-	if err == nil {
-		context.SetOutput("result", strconv.Itoa(t.Hour()))
-	}
+	context.SetOutput("result", strconv.Itoa(t.Hour()))
 	return true, nil
 }

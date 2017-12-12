@@ -25,8 +25,10 @@ func (a *MyActivity) Metadata() *activity.Metadata {
 func (a *MyActivity) Eval(context activity.Context) (done bool, err error)  {
 
 	// do eval
-	t := time.Now()
-	fmt.Println(t.Format("20060102150405"))
-	context.SetOutput("result", t.Format("20060102150405"))
+	
+	now := time.Now()
+	fmt.Println(now.Hour())
+	
+	context.SetOutput("result", now.Hour())
 	return true, nil
 }

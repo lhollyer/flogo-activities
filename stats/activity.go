@@ -82,7 +82,7 @@ import (
 var log = logger.GetLogger("activity-tibco-inference")
 
 // InferfenceActivity is an Activity that is used to Invoke a ML Model using flogo-ml framework
-type ModelActivity struct {
+type MyActivity struct {
 	metadata *activity.Metadata
 }
 

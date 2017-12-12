@@ -1,4 +1,4 @@
-package hx711
+package stats
 
 import (
 	"io/ioutil"

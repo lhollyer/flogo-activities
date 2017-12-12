@@ -1,6 +1,5 @@
 package stats-glz
 
-//
 //#include <string.h> 
 //#include <math.h> 
 //

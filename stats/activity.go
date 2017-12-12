@@ -88,16 +88,16 @@ type MyActivity struct {
 
 // NewActivity creates a New InferfenceActivity
 func NewActivity(metadata *activity.Metadata) activity.Activity {
-	return &ModelActivity{metadata: metadata}
+	return &MyActivity{metadata: metadata}
 }
 
 // Metadata returns the activity's metadata
-func (a *ModelActivity) Metadata() *activity.Metadata {
+func (a *MyActivity) Metadata() *activity.Metadata {
 	return a.metadata
 }
 
 // Eval implements api.Activity.Eval - Runs an ML model
-func (a *ModelActivity) Eval(context activity.Context) (done bool, err error) {
+func (a *MyActivity) Eval(context activity.Context) (done bool, err error) {
 
 	var i1 = C.double(float64(context.GetInput("_CURRENT_WEIGHT__").(float64)))
 	var i2 = C.double(float64(context.GetInput("_HOUROFDAY__").(float64)))

@@ -1,11 +1,11 @@
 {
-	"name": "statistica_activity",
+	"name": "stats-glz",
 	"type": "flogo:activity",
 	"ref": "github.com/TIBCOSoftware/package/name",
 	"version": "0.0.1",
 	"title": "Name of model",
 	"description": "My_Model Activity generated from Statistica",
-	"homepage": "http://....",
+	"homepage": "https://github.com/lhollyer/flogo-activities/stats-glz/activity.json",
 	"inputs":[
 		{
 			"name": "_CURRENT_WEIGHT__",
@@ -21,7 +21,7 @@
 	"outputs": [
 		{
 			"name": "result",
-			"type": "any"
+			"type": "string"
 		}
 	]
 }

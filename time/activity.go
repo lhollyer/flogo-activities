@@ -26,9 +26,15 @@ func (a *MyActivity) Eval(context activity.Context) (done bool, err error)  {
 
 	// do eval
 	
-	now := time.Now()
-	fmt.Println(now.Hour())
+	t := time.Now()
+	fmt.Println(t.Hour())
 	
-	context.SetOutput("result", now.Hour())
+	if err != nil {
+		panic(err)
+	}
+	
+	if err == nil {
+		context.SetOutput("result", t.Hour())
+	}
 	return true, nil
 }

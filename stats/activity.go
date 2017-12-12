@@ -2,10 +2,11 @@ package stats
 
 //
 //#include <string.h>
+//#include <stdlib.h>
 //#include <math.h>
 //
-//#define STRING_EQUAL(a,b) (_stricmp(a,b)==0)
-//#define STRING_NOT_EQUAL(a,b) (_stricmp(a,b)!=0)
+//#define STRING_EQUAL(a,b) (strcasecmp(a,b)==0)
+//#define STRING_NOT_EQUAL(a,b) (strcasecmp(a,b)!=0)
 //#define STRING_SET(a,b)   strcpy(a,b)
 //
 //
@@ -47,7 +48,7 @@ package stats
 //    _dumcode[1]=-1;
 //    _nparam = 3;
 //    _npco=2;
-//    if( _isnan(*_CURRENT_WEIGHT__) || _isnan(*_HOUROFDAY__) ){
+//    if( isnan(*_CURRENT_WEIGHT__) || isnan(*_HOUROFDAY__) ){
 //      *_pRet=0;
 //      goto EndProgram;
 //    }

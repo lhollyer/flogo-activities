@@ -1,4 +1,4 @@
-package statistica_activity
+package stats-glz
 
 //
 //#include <string.h> 

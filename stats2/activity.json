@@ -3,7 +3,7 @@
 	"type": "flogo:activity",
 	"ref": "github.com/lhollyer/flogo-activities/stats2",
 	"version": "0.0.1",
-	"title": "Name of model",
+	"title": "Name of model2",
 	"description": "My_Model Activity generated from Statistica",
 	"homepage": "https://github.com/lhollyer/flogo-activities/stats2",
 	"inputs":[

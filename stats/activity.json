@@ -1,7 +1,7 @@
 {
 	"name": "stats",
 	"type": "flogo:activity",
-	"ref": "github.com/TIBCOSoftware/package/name",
+	"ref": "github.com/lhollyer/flogo-activities/stats",
 	"version": "0.0.1",
 	"title": "Name of model",
 	"description": "My_Model Activity generated from Statistica",

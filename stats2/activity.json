@@ -1,5 +1,5 @@
 {
-	"name": "stats",
+	"name": "stats2",
 	"type": "flogo:activity",
 	"ref": "github.com/lhollyer/flogo-activities/stats2",
 	"version": "0.0.1",

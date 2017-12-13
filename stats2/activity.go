@@ -1,4 +1,4 @@
-package stats
+package stats2
 
 //
 //#include <string.h>

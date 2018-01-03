@@ -16,7 +16,7 @@ Create a new application and then a new flow inside the app
       * Another __Control GPIO__ activity with the method as 'Set State' with the same pin number, no direction required, and state set to ‘High’ or ‘Low’
 
 5. To parse parameters from one activity to another, hover over the activity which requires the parsed value and click on __Transform__. On the field you want changed, click on the box and select the relevant activity’s ‘result’ variable, then save it.
-  * To add the parameter into other text, you will need to install a __Combine__ activity (`https://github.com/jvanderl/flogo-components/activity/combine`) and transform the parameter into “part1”.
+    * To add the parameter into other text, you will need to install a __Combine__ activity (`https://github.com/jvanderl/flogo-components/activity/combine`) and transform the parameter into “part1”.
 6. To add a conditional statement, hover over an activity and click on __Add Branch__. Click on the branch to change the condition - the default variable name will be `<activity-name>.result`
 
 7. Once your app is completed and ready to test, return to the list of flows and click on __Build__. To run this on a Raspberry Pi, click on __ARM/Linux__. Save the file and transfer it to your Raspberry Pi: `scp <saved file> <rpi_username>@<rpi_ipaddress>:~/<saved file>`

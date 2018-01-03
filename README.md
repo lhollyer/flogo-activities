@@ -6,7 +6,7 @@ Create a new application and then a new flow inside the app
 
 1. Select the trigger - install __Timer2__ for the best timer trigger by copying and pasting his Github link `https://github.com/jvanderl/flogo-components/trigger/timer2`
 
-  * If you get any errors when installing a trigger or activity, double check the URL doesn’t include `/tree/master/…`
+   * If you get any errors when installing a trigger or activity, double check the URL doesn’t include `/tree/master/…`
 
 2. Change the timer settings to be either repeating or non-repeating, start immediately and type in a number in either the hours, minutes or seconds field
 

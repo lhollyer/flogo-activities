@@ -1,8 +1,6 @@
-ds18b20 contains the Flogo activity for the Arduino DS18b20 temperature sensor.
-
-hx711py contains the Flogo activity for the HX711 load cell/ADC sensor combination.
-
-time contains the Flogo activity for getting the current time.
+* ds18b20 contains the Flogo activity for the Arduino DS18b20 temperature sensor.
+* hx711py contains the Flogo activity for the HX711 load cell/ADC sensor combination.
+* time contains the Flogo activity for getting the current time.
 
 
 

@@ -9,7 +9,7 @@ Basic Introduction to Flogo
 ===========================     
 
 
-Create a new application and then a new flow inside the app
+1. Create a new application and then a new flow inside the app
 
 1. Select the trigger - install __Timer2__ for the best timer trigger by copying and pasting his Github link `https://github.com/jvanderl/flogo-components/trigger/timer2`
 

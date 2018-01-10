@@ -9,27 +9,30 @@ Basic Introduction to Flogo
 ===========================     
 
 
-1. Create a new application and then a new flow inside the app
+1. Create a new __microservice__ application and then a new flow inside the app
 
-1. Select the trigger - install __Timer2__ for the best timer trigger by copying and pasting his Github link `https://github.com/jvanderl/flogo-components/trigger/timer2`
+1. Select the trigger - install __Timer2__ for the best timer trigger by copying and pasting his Github link `https://github.com/jvanderl/flogo-components/trigger/timer2`. 
 
-   * If you get any errors when installing a trigger or activity, double check the URL doesn’t include `/tree/master/…`
+   * In the newer version of Flogo, you need to click on the left-most __'+'__ to select the trigger.
+   * If you get any errors when installing a trigger or activity, double check the URL doesn’t include `/tree/master/…`.
 
 2. Change the timer settings to be either repeating or non-repeating, start immediately and type in a number in either the hours, minutes or seconds field
 
-3. Add further activities either preinstalled or create your own: To create an activity, follow the steps [here](https://tibcosoftware.github.io/flogo/extensions-developer/create-activity/)
+3. Add further activities either preinstalled or create your own - to create an activity, follow the steps [here](https://tibcosoftware.github.io/flogo/extensions-developer/create-activity/):
     * To use GPIO pins on the Raspberry Pi, you need:
-      *  A __Control GPIO__ activity which sets the method as ‘Direction’, pin number, and direction as either ‘Input’ or ‘Output’
-      * Another __Control GPIO__ activity with the method as 'Set State' with the same pin number, no direction required, and state set to ‘High’ or ‘Low’
+      *  A __Control GPIO__ activity which sets the method as ‘Direction’, pin number, and direction as either ‘Input’ or ‘Output’.
+      * To __read__ the GPIO state, add another __Control GPIO__ activity with the method as 'Read State' with the same pin number, no direction required.
+      * To __change__ the GPIO state, add another __Control GPIO__ activity with the method as 'Set State' with the same pin number, no direction required, and state set to ‘High’ or ‘Low’.
 
 5. To parse parameters from one activity to another, hover over the activity which requires the parsed value and click on __Transform__. On the field you want changed, click on the box and select the relevant activity’s ‘result’ variable, then save it.
     * To add the parameter into other text, you will need to install a __Combine__ activity (`https://github.com/jvanderl/flogo-components/activity/combine`) and transform the parameter into “part1”.
-6. To add a conditional statement, hover over an activity and click on __Add Branch__. Click on the branch to change the condition - the default variable name will be `<activity-name>.result`
+6. To add a conditional statement, hover over an activity and click on __Add Branch__. Click on the branch to change the condition - the default variable name will be `<activity-name>.result`.
+    * Any spaces will be substituted for hyphens - e.g. __'Light on'__ will have a variable name as __'light-on.result'__.
 
-7. Once your app is completed and ready to test, return to the list of flows and click on __Build__. To run this on a Raspberry Pi, click on __ARM/Linux__. Save the file and transfer it to your Raspberry Pi: `scp <saved file> <rpi_username>@<rpi_ipaddress>:~/<saved file>`
-2. On the Raspberry Pi, make the file executable. Type `chmod +x <saved file>` into terminal
+7. Once your app is completed and ready to test, return to the list of flows and click on __Build__. To run this on a Raspberry Pi, click on __ARM/Linux__. Save the file and transfer it to your Raspberry Pi: `scp <saved file> <rpi_username>@<rpi_ipaddress>:~/<saved file>`.
+2. On the Raspberry Pi, make the file executable. Type `chmod +x <saved file>` into terminal.
 
-3. Execute the build: `./<saved file>`
+3. Execute the build: `./<saved file>`.
 
 ### Notes and Common Problems
 

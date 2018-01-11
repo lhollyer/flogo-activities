@@ -1,6 +1,7 @@
 
 # ds18b20
 This activity will allow your Flogo application to read the temperature from a DS18b20 sensor through a Raspberry Pi.
+Using [yryz's Golang library](https://github.com/yryz/ds18b20).
 
 ## Installation
 

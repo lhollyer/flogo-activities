@@ -7,11 +7,6 @@
   "description": "Setup ds18b20",
   "homepage": "https://github.com/lhollyer/ds18b20",
   "inputs":[
-    {
-      "name": "pinNumber",
-      "type": "integer",
-      "required": true
-    }
   ],
   "outputs": [
     {

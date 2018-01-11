@@ -12,6 +12,7 @@ Link for flogo web:
 https://github.com/lhollyer/flogo-activities/ds18b20
 ```
 
+
 ## Schema
 Inputs and Outputs:
 
